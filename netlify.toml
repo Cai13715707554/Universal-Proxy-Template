@@ -3,6 +3,11 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/github*"
+  to = "https://github.com/:splat"
+  status = 200
+
+[[redirects]]
   from = "/proxy/*"
   to = "/.netlify/functions/proxy"
   status = 200
@@ -10,9 +15,4 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/github*"
-  to = "https://github.com/:splat"
   status = 200
