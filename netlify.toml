@@ -3,7 +3,7 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/github*"
+  from = "/github/*"
   to = "https://github.com/:splat"
   status = 200
 
