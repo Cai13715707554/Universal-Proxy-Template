@@ -11,3 +11,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/github*"
+  to = "https://github.com/:splat"
+  status = 200
